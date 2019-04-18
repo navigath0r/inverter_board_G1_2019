@@ -1,0 +1,27 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Vikings_actives:IPB017N10N5 Q?
+U 1 1 5CB8B14E
+P 2900 2000
+F 0 "Q?" H 3106 2046 50  0000 L CNN
+F 1 "IPB017N10N5" H 3106 1955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin8" H 2900 2000 50  0001 C CIN
+F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 2900 2000 50  0001 L CNN
+	1    2900 2000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
