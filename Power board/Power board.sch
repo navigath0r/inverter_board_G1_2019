@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Power board-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -27,12 +28,12 @@ $EndComp
 $Comp
 L Vikings_actives:IPB017N10N5 Q?
 U 1 1 5CB8FD8E
-P 5650 2250
-F 0 "Q?" H 5856 2296 50  0000 L CNN
-F 1 "IPB017N10N5" H 5856 2205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin8" H 5650 2250 50  0001 C CIN
-F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 5650 2250 50  0001 L CNN
-	1    5650 2250
+P 6350 2250
+F 0 "Q?" H 6556 2296 50  0000 L CNN
+F 1 "IPB017N10N5" H 6556 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin8" H 6350 2250 50  0001 C CIN
+F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 6350 2250 50  0001 L CNN
+	1    6350 2250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -49,12 +50,12 @@ $EndComp
 $Comp
 L Vikings_actives:IPB017N10N5 Q?
 U 1 1 5CB94E76
-P 5650 3250
-F 0 "Q?" H 5856 3296 50  0000 L CNN
-F 1 "IPB017N10N5" H 5856 3205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin8" H 5650 3250 50  0001 C CIN
-F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 5650 3250 50  0001 L CNN
-	1    5650 3250
+P 6350 3250
+F 0 "Q?" H 6556 3296 50  0000 L CNN
+F 1 "IPB017N10N5" H 6556 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin8" H 6350 3250 50  0001 C CIN
+F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 6350 3250 50  0001 L CNN
+	1    6350 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -62,33 +63,22 @@ L Connector:Screw_Terminal_01x01 J?
 U 1 1 5CBA18E8
 P 5250 1150
 F 0 "J?" H 5330 1192 50  0000 L CNN
-F 1 "Screw_Terminal_01x01" H 5330 1101 50  0000 L CNN
+F 1 "Bat+" H 5330 1101 50  0000 L CNN
 F 2 "" H 5250 1150 50  0001 C CNN
 F 3 "~" H 5250 1150 50  0001 C CNN
 	1    5250 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 1150 4900 1150
-Wire Wire Line
-	4900 1150 4900 1700
-Wire Wire Line
-	4900 1700 4500 1700
-Wire Wire Line
 	4500 1700 4500 2050
 Wire Wire Line
-	4900 1700 5750 1700
-Wire Wire Line
-	5750 1700 5750 2050
-Connection ~ 4900 1700
+	6450 1700 6450 2050
 Wire Wire Line
 	4500 2450 4500 3050
 Wire Wire Line
-	5750 2450 5750 3050
+	6450 2450 6450 3050
 Wire Wire Line
-	5750 3450 5750 3800
-Wire Wire Line
-	5750 3800 4950 3800
+	6450 3450 6450 3800
 Wire Wire Line
 	4500 3800 4500 3450
 $Comp
@@ -96,7 +86,7 @@ L Connector:Screw_Terminal_01x01 J?
 U 1 1 5CBA4101
 P 5400 4450
 F 0 "J?" H 5480 4492 50  0000 L CNN
-F 1 "Screw_Terminal_01x01" H 5480 4401 50  0000 L CNN
+F 1 "Bat-" H 5480 4401 50  0000 L CNN
 F 2 "" H 5400 4450 50  0001 C CNN
 F 3 "~" H 5400 4450 50  0001 C CNN
 	1    5400 4450
@@ -106,7 +96,70 @@ Wire Wire Line
 	5200 4450 4950 4450
 Wire Wire Line
 	4950 4450 4950 3800
-Connection ~ 4950 3800
 Wire Wire Line
 	4950 3800 4500 3800
+$Comp
+L Device:R R?
+U 1 1 5CC099DA
+P 3900 2250
+F 0 "R?" V 3693 2250 50  0000 C CNN
+F 1 "R" V 3784 2250 50  0000 C CNN
+F 2 "" V 3830 2250 50  0001 C CNN
+F 3 "~" H 3900 2250 50  0001 C CNN
+	1    3900 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CC0B578
+P 3900 3250
+F 0 "R?" V 3693 3250 50  0000 C CNN
+F 1 "R" V 3784 3250 50  0000 C CNN
+F 2 "" V 3830 3250 50  0001 C CNN
+F 3 "~" H 3900 3250 50  0001 C CNN
+	1    3900 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CC0C047
+P 5850 3250
+F 0 "R?" V 5643 3250 50  0000 C CNN
+F 1 "R" V 5734 3250 50  0000 C CNN
+F 2 "" V 5780 3250 50  0001 C CNN
+F 3 "~" H 5850 3250 50  0001 C CNN
+	1    5850 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3800 6450 3800
+Connection ~ 4950 3800
+$Comp
+L Device:R R?
+U 1 1 5CC100FA
+P 5850 2250
+F 0 "R?" V 5643 2250 50  0000 C CNN
+F 1 "R" V 5734 2250 50  0000 C CNN
+F 2 "" V 5780 2250 50  0001 C CNN
+F 3 "~" H 5850 2250 50  0001 C CNN
+	1    5850 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 1700 4950 1700
+Wire Wire Line
+	4950 1700 4950 1150
+Wire Wire Line
+	4950 1150 5050 1150
+Connection ~ 4950 1700
+Wire Wire Line
+	4950 1700 6450 1700
+Wire Wire Line
+	6150 2250 6000 2250
+Wire Wire Line
+	4200 2250 4050 2250
+Wire Wire Line
+	6150 3250 6000 3250
+Wire Wire Line
+	4200 3250 4050 3250
 $EndSCHEMATC
