@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Vikings_actives:IPB017N10N5 Q1
-U 1 1 5CB8B14E
-P 4400 2250
-F 0 "Q1" H 4606 2296 50  0000 L CNN
-F 1 "IPB017N10N5" H 4606 2205 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 4400 2250 50  0001 C CIN
-F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 4400 2250 50  0001 L CNN
-	1    4400 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Vikings_actives:IPB017N10N5 Q3
 U 1 1 5CB8FD8E
 P 6350 2250
@@ -47,67 +36,12 @@ F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 4400 3250 
 	1    4400 3250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Vikings_actives:IPB017N10N5 Q4
-U 1 1 5CB94E76
-P 6350 3250
-F 0 "Q4" H 6556 3296 50  0000 L CNN
-F 1 "IPB017N10N5" H 6556 3205 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 6350 3250 50  0001 C CIN
-F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 6350 3250 50  0001 L CNN
-	1    6350 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 1700 4500 2050
 Wire Wire Line
 	6450 3450 6450 3800
 Wire Wire Line
 	4500 3800 4500 3450
-$Comp
-L Device:R R1
-U 1 1 5CC099DA
-P 3900 2250
-F 0 "R1" V 3693 2250 50  0000 C CNN
-F 1 "4.7" V 3784 2250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3830 2250 50  0001 C CNN
-F 3 "~" H 3900 2250 50  0001 C CNN
-	1    3900 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5CC0B578
-P 3900 3250
-F 0 "R2" V 3693 3250 50  0000 C CNN
-F 1 "4.7" V 3784 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3830 3250 50  0001 C CNN
-F 3 "~" H 3900 3250 50  0001 C CNN
-	1    3900 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5CC0C047
-P 5850 3250
-F 0 "R4" V 5643 3250 50  0000 C CNN
-F 1 "4.7" V 5734 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5780 3250 50  0001 C CNN
-F 3 "~" H 5850 3250 50  0001 C CNN
-	1    5850 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5CC100FA
-P 5850 2250
-F 0 "R3" V 5643 2250 50  0000 C CNN
-F 1 "4.7" V 5734 2250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5780 2250 50  0001 C CNN
-F 3 "~" H 5850 2250 50  0001 C CNN
-	1    5850 2250
-	0    1    1    0   
-$EndComp
 Connection ~ 6450 3800
 $Comp
 L Device:C C3
@@ -125,35 +59,9 @@ Wire Wire Line
 Wire Wire Line
 	4500 2450 4500 2750
 Wire Wire Line
-	6000 2250 6150 2250
-Wire Wire Line
 	4050 2250 4200 2250
 Wire Wire Line
-	6000 3250 6150 3250
-Wire Wire Line
 	4050 3250 4200 3250
-$Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5CC1F15C
-P 5400 3350
-F 0 "J4" H 5318 3025 50  0000 C CNN
-F 1 "Low2" H 5318 3116 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm_SMD_Pin1Left" H 5400 3350 50  0001 C CNN
-F 3 "~" H 5400 3350 50  0001 C CNN
-	1    5400 3350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5CC1FE1C
-P 5400 2350
-F 0 "J3" H 5318 2025 50  0000 C CNN
-F 1 "High2" H 5318 2116 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm_SMD_Pin1Left" H 5400 2350 50  0001 C CNN
-F 3 "~" H 5400 2350 50  0001 C CNN
-	1    5400 2350
-	-1   0    0    1   
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5CC2064F
@@ -177,21 +85,9 @@ F 3 "~" H 3450 2350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5700 2250 5600 2250
+	3650 3350 4050 3350
 Wire Wire Line
-	5600 2350 6150 2350
-Wire Wire Line
-	6150 3350 5600 3350
-Wire Wire Line
-	5600 3250 5700 3250
-Wire Wire Line
-	3750 3250 3650 3250
-Wire Wire Line
-	3650 3350 4200 3350
-Wire Wire Line
-	4200 2350 3650 2350
-Wire Wire Line
-	3650 2250 3750 2250
+	4200 2350 4050 2350
 Wire Wire Line
 	4500 2750 6450 2750
 Connection ~ 4500 2750
@@ -532,4 +428,70 @@ Wire Wire Line
 Connection ~ 1600 3800
 Wire Wire Line
 	1600 3800 2000 3800
+Wire Wire Line
+	5450 2250 5450 1950
+Wire Wire Line
+	5450 1950 4050 1950
+Wire Wire Line
+	4050 1950 4050 2250
+Wire Wire Line
+	5450 2250 6150 2250
+Wire Wire Line
+	3650 2250 4050 2250
+Connection ~ 4050 2250
+Wire Wire Line
+	5450 2350 6150 2350
+Connection ~ 4050 2350
+Wire Wire Line
+	4050 2350 3650 2350
+Wire Wire Line
+	4050 2550 5450 2550
+Wire Wire Line
+	4050 2350 4050 2550
+Wire Wire Line
+	5450 2350 5450 2550
+Wire Wire Line
+	5450 3000 4050 3000
+Wire Wire Line
+	4050 3000 4050 3250
+Wire Wire Line
+	5450 3250 6150 3250
+Wire Wire Line
+	5450 3000 5450 3250
+Wire Wire Line
+	3650 3250 4050 3250
+Connection ~ 4050 3250
+Wire Wire Line
+	4050 3350 4050 3550
+Wire Wire Line
+	4050 3550 5450 3550
+Wire Wire Line
+	5450 3550 5450 3350
+Wire Wire Line
+	5450 3350 6150 3350
+Connection ~ 4050 3350
+Wire Wire Line
+	4050 3350 4200 3350
+$Comp
+L Vikings_actives:IPB017N10N5-1 U1
+U 1 1 5CCDC810
+P 4350 2250
+F 0 "U1" H 4606 2296 50  0000 L CNN
+F 1 "IPB017N10N5-1" H 4606 2205 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 3850 1650 50  0001 C CNN
+F 3 "" H 3850 1650 50  0001 C CNN
+	1    4350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Vikings_actives:IPB017N10N5-1 U2
+U 1 1 5CCDE070
+P 6300 3250
+F 0 "U2" H 6556 3296 50  0000 L CNN
+F 1 "IPB017N10N5-1" H 6556 3205 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 5800 2650 50  0001 C CNN
+F 3 "" H 5800 2650 50  0001 C CNN
+	1    6300 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
