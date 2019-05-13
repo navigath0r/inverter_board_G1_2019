@@ -383,9 +383,9 @@ Connection ~ 2000 1700
 Wire Wire Line
 	2000 1700 2350 1700
 Wire Wire Line
-	1000 1700 1350 1700
+	1000 1700 1100 1700
 Wire Wire Line
-	1000 3800 1350 3800
+	1000 3800 1150 3800
 $Comp
 L Device:C C8
 U 1 1 5CC2C8AA
@@ -494,4 +494,36 @@ F 3 "" H 5800 2650 50  0001 C CNN
 	1    6300 3250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5CD9F7BF
+P 1100 1300
+F 0 "J3" V 1064 1212 50  0000 R CNN
+F 1 "Conn_01x01" V 973 1212 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965_Pad" H 1100 1300 50  0001 C CNN
+F 3 "~" H 1100 1300 50  0001 C CNN
+	1    1100 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5CDA0D0F
+P 1150 4200
+F 0 "J4" V 1022 4280 50  0000 L CNN
+F 1 "Conn_01x01" V 1113 4280 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965_Pad" H 1150 4200 50  0001 C CNN
+F 3 "~" H 1150 4200 50  0001 C CNN
+	1    1150 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 1500 1100 1700
+Connection ~ 1100 1700
+Wire Wire Line
+	1100 1700 1350 1700
+Wire Wire Line
+	1150 3800 1150 4000
+Connection ~ 1150 3800
+Wire Wire Line
+	1150 3800 1350 3800
 $EndSCHEMATC

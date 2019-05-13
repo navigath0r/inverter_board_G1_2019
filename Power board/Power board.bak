@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Vikings_actives:IPB017N10N5 Q1
-U 1 1 5CB8B14E
-P 4400 2250
-F 0 "Q1" H 4606 2296 50  0000 L CNN
-F 1 "IPB017N10N5" H 4606 2205 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 4400 2250 50  0001 C CIN
-F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 4400 2250 50  0001 L CNN
-	1    4400 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Vikings_actives:IPB017N10N5 Q3
 U 1 1 5CB8FD8E
 P 6350 2250
@@ -45,17 +34,6 @@ F 1 "IPB017N10N5" H 4606 3205 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 4400 3250 50  0001 C CIN
 F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 4400 3250 50  0001 L CNN
 	1    4400 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Vikings_actives:IPB017N10N5 Q4
-U 1 1 5CB94E76
-P 6350 3250
-F 0 "Q4" H 6556 3296 50  0000 L CNN
-F 1 "IPB017N10N5" H 6556 3205 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 6350 3250 50  0001 C CIN
-F 3 "https://www.wolfspeed.com/media/downloads/145/C3M0065090J.pdf" H 6350 3250 50  0001 L CNN
-	1    6350 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -494,4 +472,26 @@ Wire Wire Line
 Connection ~ 4050 3350
 Wire Wire Line
 	4050 3350 4200 3350
+$Comp
+L Vikings_actives:IPB017N10N5-1 U1
+U 1 1 5CCDC810
+P 4350 2250
+F 0 "U1" H 4606 2296 50  0000 L CNN
+F 1 "IPB017N10N5-1" H 4606 2205 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 3850 1650 50  0001 C CNN
+F 3 "" H 3850 1650 50  0001 C CNN
+	1    4350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Vikings_actives:IPB017N10N5-1 U2
+U 1 1 5CCDE070
+P 6300 3250
+F 0 "U2" H 6556 3296 50  0000 L CNN
+F 1 "IPB017N10N5-1" H 6556 3205 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 5800 2650 50  0001 C CNN
+F 3 "" H 5800 2650 50  0001 C CNN
+	1    6300 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
